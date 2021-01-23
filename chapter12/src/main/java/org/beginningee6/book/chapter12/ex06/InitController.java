@@ -1,10 +1,10 @@
 package org.beginningee6.book.chapter12.ex06;
 
-import org.beginningee6.book.chapter12.Book;
-
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
+
+import org.beginningee6.book.chapter12.Book;
 
 /**
  * @author Antonio Goncalves

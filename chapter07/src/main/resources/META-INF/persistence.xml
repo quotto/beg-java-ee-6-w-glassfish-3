@@ -6,8 +6,7 @@
 
     <persistence-unit name="chapter07PU" transaction-type="JTA">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <!--<jta-data-source>jdbc/chapter07DS</jta-data-source>-->
-        <jta-data-source>jdbc/__default</jta-data-source>
+        <jta-data-source>jdbc/chapter07DS</jta-data-source>
         <class>org.beginningee6.book.chapter07.ex01.CD01</class>
         <class>org.beginningee6.book.chapter07.ex01.Book01</class>
         <properties>

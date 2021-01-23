@@ -1,6 +1,9 @@
 package org.beginningee6.book.chapter05.ex05;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * @author Antonio Goncalves
@@ -10,9 +13,9 @@ import javax.persistence.*;
  *         --
  *         Simple entity
  */
-@EntityListeners(DebugListener.class)
+//@EntityListeners(DebugListener.class)
 @Entity
-@Table(name = "ex03_customer")
+@Table(name = "ex05_customer")
 public class Person05 {
 
     // ======================================

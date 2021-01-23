@@ -1,5 +1,7 @@
 package org.beginningee6.book.chapter03.ex07;
 
+import java.io.Serializable;
+
 import javax.persistence.Embeddable;
 
 /**
@@ -11,7 +13,7 @@ import javax.persistence.Embeddable;
  *         Primary key of the news mapped as an Embeddable
  */
 @Embeddable
-public class NewsId07 {
+public class NewsId07 implements Serializable {
 
     // ======================================
     // =             Attributes             =

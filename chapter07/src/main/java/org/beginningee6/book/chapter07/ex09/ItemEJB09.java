@@ -1,11 +1,16 @@
 package org.beginningee6.book.chapter07.ex09;
 
+import java.util.List;
+
 import javax.annotation.Resource;
-import javax.ejb.*;
+import javax.ejb.Local;
+import javax.ejb.LocalBean;
+import javax.ejb.Remote;
+import javax.ejb.SessionContext;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import java.util.List;
 
 /**
  * @author Antonio Goncalves
@@ -15,7 +20,7 @@ import java.util.List;
  *         --
  */
 @Stateless
-//@LocalBean
+@LocalBean
 @Local(ItemLocal09.class)
 @Remote(ItemRemote09.class)
 public class ItemEJB09 implements ItemLocal09 , ItemRemote09 {

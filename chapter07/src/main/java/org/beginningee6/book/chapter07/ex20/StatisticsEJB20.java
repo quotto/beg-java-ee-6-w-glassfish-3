@@ -31,8 +31,10 @@ public class StatisticsEJB20 {
         // ...
     }
 
+    // persistent=true(デフォルト)の場合はAP停止中もスケジューリングが有効となり、
+    // 停止中にスケジュール時刻になっていたら再起動時に即実行される
     @Schedule(minute = "*/10", hour = "*", persistent = false)
     public void refreshCache() {
-        // ...
+    	System.out.println("Refresh Test per 10 minutes");
     }
 }

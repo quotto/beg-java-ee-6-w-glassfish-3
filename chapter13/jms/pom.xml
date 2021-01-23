@@ -15,11 +15,17 @@
     </parent>
 
     <dependencies>
-        <dependency>
+<!--          <dependency>
             <groupId>org.glassfish.appclient</groupId>
             <artifactId>gf-client</artifactId>
             <version>${glassfish-version}</version>
-        </dependency>
+        </dependency>-->
+        <dependency>
+    <groupId>org.glassfish.main.common</groupId>
+      <artifactId>glassfish-api</artifactId>
+      <version>3.1.2.2</version>
+  </dependency>
+
     </dependencies>
 
     <build>
@@ -32,7 +38,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.beginningee6.book.chapter13.jms.ex04.Receiver</mainClass>
+                            <!-- <mainClass>org.beginningee6.book.chapter13.jms.ex04.Receiver</mainClass> -->
                             <!--<mainClass>org.beginningee6.book.chapter13.jms.ex04.Sender</mainClass>-->
                             <!--<mainClass>org.beginningee6.book.chapter13.jms.ex05.Receiver</mainClass>-->
                             <!--<mainClass>org.beginningee6.book.chapter13.jms.ex05.Listener</mainClass>-->
@@ -40,7 +46,7 @@
                             <!--<mainClass>org.beginningee6.book.chapter13.jms.ex07.Receiver</mainClass>-->
                             <!--<mainClass>org.beginningee6.book.chapter13.jms.ex07.Listener</mainClass>-->
                             <!--<mainClass>org.beginningee6.book.chapter13.jms.ex07.Sender</mainClass>-->
-                            <!--<mainClass>org.beginningee6.book.chapter13.jms.ex14.OrderSender</mainClass>-->
+                            <mainClass>org.beginningee6.book.chapter13.jms.ex14.OrderSender</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

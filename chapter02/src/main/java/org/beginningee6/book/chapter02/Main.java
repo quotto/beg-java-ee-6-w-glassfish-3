@@ -16,6 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+    	System.out.println("start");
         // Creates an instance of book
         Book book = new Book();
         book.setTitle("The Hitchhiker's Guide to the Galaxy");
@@ -37,5 +38,6 @@ public class Main {
 
         em.close();
         emf.close();
+    	System.out.println("end");
     }
 }

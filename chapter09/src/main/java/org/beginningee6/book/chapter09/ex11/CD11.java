@@ -1,7 +1,13 @@
 package org.beginningee6.book.chapter09.ex11;
 
-import javax.persistence.*;
 import java.util.HashMap;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.NamedQuery;
 
 /**
  * @author Antonio Goncalves
@@ -11,7 +17,7 @@ import java.util.HashMap;
  *         --
  */
 @Entity
-@NamedQuery(name = "CD08.findAllCDs", query = "SELECT c FROM CD08 c")
+@NamedQuery(name = "CD08.findAllCDs", query = "SELECT c FROM CD11 c")
 public class CD11 {
 
     // ======================================

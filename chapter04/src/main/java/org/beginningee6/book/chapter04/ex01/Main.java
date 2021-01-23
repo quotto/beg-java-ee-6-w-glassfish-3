@@ -1,9 +1,11 @@
 package org.beginningee6.book.chapter04.ex01;
 
-import org.beginningee6.book.chapter04.Constants;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
 
-import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
+import org.beginningee6.book.chapter04.Constants;
 
 /**
  * @author Antonio Goncalves

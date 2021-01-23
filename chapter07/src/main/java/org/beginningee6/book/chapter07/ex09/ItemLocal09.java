@@ -1,7 +1,8 @@
 package org.beginningee6.book.chapter07.ex09;
 
-import javax.ejb.Local;
 import java.util.List;
+
+import javax.ejb.Local;
 
 /**
  * @author Antonio Goncalves
@@ -10,7 +11,7 @@ import java.util.List;
  *         http://www.antoniogoncalves.org
  *         --
  */
-//@Local
+@Local
 public interface ItemLocal09 {
 
     // ======================================

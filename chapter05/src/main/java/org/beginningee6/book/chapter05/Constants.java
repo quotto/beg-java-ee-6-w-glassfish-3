@@ -8,6 +8,6 @@ public interface Constants {
     // ======================================
     // =             Constants              =
     // ======================================
-    public static final String PERSISTENCE_UNIT_NAME = "chapter07PU";
+    public static final String PERSISTENCE_UNIT_NAME = "chapter05PU";
 
 }

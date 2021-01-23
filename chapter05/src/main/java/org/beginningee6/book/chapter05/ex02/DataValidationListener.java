@@ -24,5 +24,8 @@ public class DataValidationListener {
             throw new IllegalArgumentException("Invalid first name");
         if (customer.getLastName() == null || "".equals(customer.getLastName()))
             throw new IllegalArgumentException("Invalid last name");
+        // PreUpdateで設定した値は反映されない
+        System.out.println("Set Age 100");
+        customer.setAge(100);
     }
 }

@@ -1,6 +1,10 @@
 package org.beginningee6.book.chapter09.ex11;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 
 /**
  * @author Antonio Goncalves
@@ -10,7 +14,7 @@ import javax.persistence.*;
  *         --
  */
 @Entity
-@NamedQuery(name = "Book08.findAllBooks", query = "SELECT b FROM Book08 b")
+@NamedQuery(name = "Book08.findAllBooks", query = "SELECT b FROM Book11 b")
 public class Book11 {
 
     // ======================================

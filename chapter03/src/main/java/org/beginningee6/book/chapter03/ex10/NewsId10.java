@@ -1,5 +1,7 @@
 package org.beginningee6.book.chapter03.ex10;
 
+import java.io.Serializable;
+
 /**
  * @author Antonio Goncalves
  *         APress Book - Beginning Java EE 6 with Glassfish
@@ -8,7 +10,7 @@ package org.beginningee6.book.chapter03.ex10;
  *         --
  *         Primary key of the news mapped as an IdClass
  */
-public class NewsId10 {
+public class NewsId10 implements Serializable {
 
     // ======================================
     // =             Attributes             =

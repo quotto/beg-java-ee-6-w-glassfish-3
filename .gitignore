@@ -1,0 +1,7 @@
+target
+.project
+.settings
+.classpath
+.metadata
+*.log
+chapter06/*tmp

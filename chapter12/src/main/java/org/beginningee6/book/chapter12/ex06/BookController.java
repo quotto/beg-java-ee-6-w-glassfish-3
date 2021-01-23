@@ -1,15 +1,15 @@
 package org.beginningee6.book.chapter12.ex06;
 
-import org.beginningee6.book.chapter12.Book;
-import org.beginningee6.book.chapter12.BookEJB;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.ejb.EJB;
-import javax.faces.context.FacesContext;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
-import java.util.ArrayList;
-import java.util.List;
+
+import org.beginningee6.book.chapter12.Book;
+import org.beginningee6.book.chapter12.BookEJB;
 
 /**
  * @author Antonio Goncalves

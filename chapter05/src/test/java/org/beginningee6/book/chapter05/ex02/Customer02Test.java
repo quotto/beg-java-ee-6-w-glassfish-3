@@ -1,11 +1,11 @@
 package org.beginningee6.book.chapter05.ex02;
 
-import org.beginningee6.book.chapter05.AbstractPersistentTest;
-import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.util.Date;
 
-import static org.junit.Assert.*;
+import org.beginningee6.book.chapter05.AbstractPersistentTest;
+import org.junit.Test;
 
 /**
  * @author Antonio Goncalves

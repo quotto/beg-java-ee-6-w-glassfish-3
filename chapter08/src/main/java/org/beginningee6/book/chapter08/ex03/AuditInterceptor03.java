@@ -1,8 +1,9 @@
 package org.beginningee6.book.chapter08.ex03;
 
+import java.util.logging.Logger;
+
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;
-import java.util.logging.Logger;
 
 public class AuditInterceptor03 {
 
@@ -10,6 +11,7 @@ public class AuditInterceptor03 {
 
     @AroundInvoke
     public Object profile(InvocationContext ic) throws Exception {
+    	logger.info(String.format("intercept @ %s",new Object[] {this.getClass().getName()}));
         long initTime = System.currentTimeMillis();
         try {
             return ic.proceed();

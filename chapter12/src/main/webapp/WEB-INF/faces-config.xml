@@ -10,9 +10,6 @@
         <navigation-case>
             <from-outcome>success</from-outcome>
             <to-view-id>/ex09/listBooks.xhtml</to-view-id>
-            <if>d
-
-            </if>
         </navigation-case>
     </navigation-rule>
 

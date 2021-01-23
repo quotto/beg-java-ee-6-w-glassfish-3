@@ -1,15 +1,16 @@
 package org.beginningee6.book.chapter12.ex11;
 
-import org.beginningee6.book.chapter12.Book;
-import org.beginningee6.book.chapter12.BookEJB;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
-import javax.faces.context.FacesContext;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import java.util.ArrayList;
-import java.util.List;
+import javax.faces.context.FacesContext;
+
+import org.beginningee6.book.chapter12.Book;
+import org.beginningee6.book.chapter12.BookEJB;
 
 /**
  * @author Antonio Goncalves
@@ -40,10 +41,10 @@ public class BookController {
         FacesContext ctx = FacesContext.getCurrentInstance();
 
         if (book.getIsbn() == null || "".equals(book.getIsbn())) {
-            ctx.addMessage("bookForm:isbn", new FacesMessage(FacesMessage.SEVERITY_WARN, "Wrong isbn", "You should enter an ISBN number"));
+            ctx.addMessage("bookForm:isbn", new FacesMessage(FacesMessage.SEVERITY_ERROR, "Wrong isbn", "You should enter an ISBN number"));
         }
         if (book.getTitle() == null || "".equals(book.getTitle())) {
-            ctx.addMessage("bookForm:title", new FacesMessage(FacesMessage.SEVERITY_WARN, "Wrong title", "You should enter a title for the book"));
+            ctx.addMessage("bookForm:title", new FacesMessage(FacesMessage.SEVERITY_ERROR, "Wrong title", "You should enter a title for the book"));
         }
 
         if (ctx.getMessageList().size() != 0)
@@ -52,6 +53,7 @@ public class BookController {
         try {
             book = bookEJB.createBook(book);
             ctx.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Book has been created", "The book" + book.getTitle() + " has been created with id=" + book.getId()));
+            return "listBooks";
         } catch (Exception e) {
             ctx.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Book hasn't been created", e.getMessage()));
         }

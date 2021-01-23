@@ -39,5 +39,21 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${plugin-jar-version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.beginningee6.book.chapter08.ex03.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
